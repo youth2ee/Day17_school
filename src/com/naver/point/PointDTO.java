@@ -3,6 +3,13 @@ package com.naver.point;
 public class PointDTO {
 	//접근지정자 private
 	//데이터타입 table의 컬럼과 동일
+	//오라클 데이터타입 : Number(전체자리수, 소수점자리수) -정수와 실수 모두 담을 수 있다.
+	//Number(3) : 3자리수 인 '정수'만 넣겠다. - java : int, long
+	//Number(4,2) : 소수점 2자리까지 담겠다. - java : double, float
+	//Varchar2() : 가변길이 문자열 - java : String
+	//Date : - java : java.sql.Date 또는 String
+	//Clob : 대용량 텍스트 - java : String
+	//변수명 table의 컬럼과 동일
 	
 	private int num;
 	private String name;
@@ -56,7 +63,5 @@ public class PointDTO {
 		this.avg = avg;
 	}
 
-	
-	
 	
 }
